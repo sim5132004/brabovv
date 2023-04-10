@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    font-family: 'SBAggroB';
+    font-size: 30px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(#e66455, #e66455 70%,#9198e5 );;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.inheader {
+    width : 100%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: white ;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+.nav {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+.section {
+    width: 75%;
+    height: 2000px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+.sidebar {
+    width: 25%;
+    height: 2000px;
+    padding: 20px;
+    text-align: center;
+    float: right;
+    background-color: #a2d0ff;
+    display: inline-block;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+.sidebar li {
+    margin: 50px 0;
+    border-radius: initial;
+    box-shadow: 7px 5px 5px 3px greenyellow;
+    box-sizing: border-box;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    font-family:'NanumSquareNeo-Variable' ;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    background-color: #4f4f4f;
+    color: #fff;
+    font-family:'NanumSquareNeo-Variable' ;
+}

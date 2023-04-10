@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="ko"><head>
+    <meta charset="UTF-8">
+    <title>웹 폼</title>
+    * 17_2
+    <style>
+        body {
+            background-color:#fff;
+        }
+        form fieldset{
+            margin-bottom:25px;
+        }
+        form legend{
+            font-size:15px;
+            font-weight:600;
+        }
+        .reg {
+            font-size:14px;
+            width:110px;
+            color:#390;
+            font-weight:bold;
+            float:left;
+            text-align:right;
+            margin-right:10px;
+        }
+        form ul li{
+            list-style:none;
+            margin: 15px 0;
+            font-size:14px;
+        }
+    </style>
+</head><body>
+    <h1>여름 방학 특강 신청</h1>
+    <form>
+    <fieldset id="register">
+        <legend> 수강 신청인 </legend>        <ul>            <li>
+                <label class="reg" for="id">학번</label>
+                <input type="text" id="id" autofocus >            </li>            <li>
+                <label class="reg" for="name">이름</label>
+                <input type="text" id="name" >       <!--       autofocus: 페이지가 로드되면 포커스를 해당요소로 이동한다./크롬에서확인
+                                    required: 필수 입력항목                    -->            </li>            <li>
+                <label class="reg" for="class">학과</label>
+                <select size="5" id="class">
+                    <optgroup label="공과대학">
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기공학과</option>
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>                    </optgroup>
+                    <optgroup label="인문대학">
+                        <option value="history">사학과</option>
+                        <option value="lang">어문학부</option>
+                        <option value="philo">철학</option>
+                    </optgroup>                </select>            </li>        </ul>    </fieldset>
+    <fieldset>
+        <legend>수강 과목을 선택하세요</legend>        <ul>            <li>
+                <span class="reg">관심분야</span>
+                <label>                    <input type="text" id="interest" list="choices">
+                    <datalist id="choices">
+                        <option value="grammar" label="문법"></option>
+
+                        <option value="voca" label="어휘"></option>
+                        <option value="speaking" label="회화"></option>
+                        <option value="listening" label="리스닝"></option>
+                        <option value="news" label="뉴스청취"></option>
+                    </datalist>                </label>            </li>        </ul>    </fieldset>
+        <!--
+        input-datalist-option: select와 유사하게 option 항목을 선택할 수 있지만
+        초기 목록에서 값을 볼 수 없고 펼치거나 값을 입력해서 매치되는 값을 찾을 수 있다.
+        option 값이 많을 경우 효과적일 수 있다.
+        크롬 브라우저에서 확인할 것
+        -->    <fieldset>
+        <button type="submit" value="submit">신청하기</button>
+        <button type="reset" value="reset">다시쓰기</button>
+    </fieldset></form></body></html>

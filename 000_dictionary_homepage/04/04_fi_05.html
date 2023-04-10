@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹폼</title>
+
+    <style>
+        body{
+            background-color: #fff;
+        }
+        ul li{
+            list-style:none;
+            margin: 15px;
+            font-size: 14px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>
+            <label>점유율 0.8</label>
+<!--            전체 크기 1을 기준으로 0.8만큼 차지합니다.-->
+            <meter value="0.8"></meter>
+        </li>
+
+        <li>
+            <label>사용량 65%</label>
+            <meter min="0" max="100" value="64"></meter>
+        </li>
+        <li>
+            <label>트래픽 A 초과</label>
+            <meter min="1024" max="10240" low="2048" high="8189" value="9216"></meter>
+            <label>트래픽 A 정상</label>
+            <meter min="1024" max="10240" low="2048" high="8189" value="5216"></meter>
+            <label>트래픽 A 부족</label>
+            <meter min="1024" max="10240" low="2048" high="8189" value="2000"></meter>
+        </li>
+        <li>
+            <label>트래픽 B 초과</label>
+            <meter value="0.5" optimum="0.8"></meter>
+            <label>트래픽 B 정상</label>
+            <meter value="0.5" optimum="0.8"></meter>
+            <label>트래픽 B 부족</label>
+            <meter value="0.9" optimum="0.8"></meter>
+        </li>
+
+    </ul>
+
+</body>
+</html>

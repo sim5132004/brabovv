@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 폼</title>
+<!--    Form이란?
+    웹서버(웹사이트)에 사용자가 입력한 정보를 전송하기 위한 다양한 형태예시
+    로그인, 웹사이트 등등
+    백엔드 기술과 연계전이므로 아래 속성은 지금 참고만하고 UI를 어떻게 구성하는
+    태그 중심으로 학습
+    ACTION: 폼 태그 안에 있는 입력 사항을 처리할 서버 프로그램
+    Method: 데이터 전송방식
+    input type 속성 (이 중 자주사용되는 주요한 type 위주로 학습)
+    text: 일반 텍스트를 입력할 수 있는 입력 상자
+    checkbox: 체크박스를 표시할 수 있는 입력 상자
+    radio: 라디오 버튼을 표시할 수 있는 입력 상자
+    submit: 폼을 제출할 수 있는 버튼
+    reset: 폼의 모든 값을 초기화할 수 있는 버튼
+    button: 아무런 동작도 하지 않는 버튼
+    file: 파일을 선택할 수 있는 입력 상자
+    hidden: 사용자에게는 보이지 않지만 서버로 넘겨지는 값
+    image: 이미지를 제출할 수 있는 버튼
+    date: 날짜를 입력할 수 있는 입력 상자
+    time: 시간을 입력할 수 있는 입력 상자
+    datetime-local: 로컬 시간과 일자를 입력할 수 있는 입력 상자
+    week: 연도 및 주차를 선택할 수 있는 입력 상자
+    month: 연도와 월을 선택할 수 있는 입력 상자
+    email: 이메일 주소를 입력할 수 있는 입력 상자
+    url: URL을 입력할 수 있는 입력 상자
+    tel: 전화번호를 입력할 수 있는 입력 상자
+    number: 숫자를 입력할 수 있는 입력 상자
+    range: 범위를 선택할 수 있는 입력 상자
+    color: 색상을 선택할 수 있는 입력 상자.    -->
+</head><body><form action="search.php" method="post">
+    <!--
+    title: 해당요소에 마우스오버하면 해당값으로 요소를 설명
+    name: form에서 전송한 데이터를 서버에서 form 안에
+    전송된 다양한 타입 요소를 구분하기 위한 용도로 사용.
+    -->
+    <input type="text" title="검색" name="search">
+    <input type="submit" value="검색">
+</form>
+</body>
+</html>
