@@ -1,0 +1,91 @@
+/*css 초기화*/
+* {margin:0; padding:0;}
+
+
+/*body 전체를 중앙정렬시에는 width값을 지정한후 margin:0 auto 입력*/
+body {width:1000px; font-family: 'nanumgothic'; margin:0 auto;}
+
+
+
+/* header 영역 */
+header {height:100px;}
+
+header h1 {float:left; margin-top:30px;}
+
+header nav ul {float:right;list-style:none;margin-top:40px;}
+
+header nav ul li {float:left;margin-left:80px;}
+
+header nav ul li a {text-decoration:none; color:#000;}
+
+header nav ul li a:hover {color:#c66;}
+
+
+
+/*img slider 영역*/
+section.imgslider {width:100%; height:430px;}
+
+section.imgslider img {width:100%; height:100%;}
+section{z-index: 1;}
+
+
+
+/*product 영역*/
+section.product {text-align:center;}
+
+section.product h1 {clear:both; margin-top:70px;margin-bottom:10px;}
+
+section.product > p {margin-bottom:40px; font-size:14px; color:#666;}
+
+section.product article {float:left; width:235px; height:323px; margin-right:20px; margin-bottom:50px;}
+
+section.product article:nth-child(6) {margin:0;}
+
+section.product article h2 {font-size:14px; margin-top:10px;}
+
+section.product article p {font-size:14px;}
+
+section.product h1 span {color:#c66; position: relative}
+section.product{
+
+    display: inline-block;
+
+
+}
+#back{
+
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+
+}
+.first:hover{
+    opacity: 0;
+    transition-duration: 10s;
+}
+.first:visited{
+    transform: rotate(100deg);
+}
+
+
+section img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/*footer 영역*/
+footer {clear:both;height:120px;}
+
+footer p {float:left;font-size:12px; color:#666; width:60%;}
+
+footer nav ul {float:right; list-style:none;}
+
+footer nav ul li {float:left; margin-left:20px;}
+
+
+
